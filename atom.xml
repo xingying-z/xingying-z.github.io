@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>xingying-z</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://xingying-z.github.io/</id>
+  <link href="https://xingying-z.github.io/" rel="alternate"/>
+  <link href="https://xingying-z.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, xingying-z</rights>
+  <subtitle>写点代码，也写点生活</subtitle>
+  <title>我的博客</title>
+  <updated>2026-10-27T16:30:00.000Z</updated>
+  <entry>
+    <author>
+      <name>xingying-z</name>
+    </author>
+    <category term="随笔" scheme="https://xingying-z.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="开始" scheme="https://xingying-z.github.io/tags/%E5%BC%80%E5%A7%8B/"/>
+    <category term="博客" scheme="https://xingying-z.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <content>
+      <![CDATA[<p>这是博客的第一篇文章。</p><h2 id="为什么要有自己的博客"><a href="#为什么要有自己的博客" class="headerlink" title="为什么要有自己的博客"></a>为什么要有自己的博客</h2><p>社交平台的推荐算法决定了你看到什么，而博客由你自己决定写什么、怎么排版、放多久。<br>它更像一间自己的房间：家具可以随时挪动，墙上可以钉任何东西。</p><h2 id="接下来写什么"><a href="#接下来写什么" class="headerlink" title="接下来写什么"></a>接下来写什么</h2><ul><li>一些踩坑记录，尤其是那些搜索引擎里找不到答案的</li><li>读书和工具的笔记</li><li>偶尔的非技术内容</li></ul><h2 id="一个代码块示例"><a href="#一个代码块示例" class="headerlink" title="一个代码块示例"></a>一个代码块示例</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">hello</span> = (<span class="params">name</span>) =&gt; <span class="string">`你好，<span class="subst">$&#123;name&#125;</span>`</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">hello</span>(<span class="string">&#x27;世界&#x27;</span>));</span><br></pre></td></tr></table></figure><p>写作流程很简单：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npx hexo new <span class="string">&quot;文章标题&quot;</span>     <span class="comment"># 新建文章</span></span><br><span class="line">npx hexo server            <span class="comment"># 本地预览 http://localhost:4000</span></span><br><span class="line">npx hexo deploy            <span class="comment"># 推送到 GitHub Pages</span></span><br></pre></td></tr></table></figure><p>欢迎来到我的博客。</p>]]>
+    </content>
+    <id>https://xingying-z.github.io/2026/10/28/hello-world/</id>
+    <link href="https://xingying-z.github.io/2026/10/28/hello-world/"/>
+    <published>2026-10-27T16:30:00.000Z</published>
+    <summary>第一篇文章，聊聊为什么要有一个自己的博客。</summary>
+    <title>你好，世界</title>
+    <updated>2026-10-27T16:30:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>xingying-z</name>
+    </author>
+    <category term="教程" scheme="https://xingying-z.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="GitHub Pages" scheme="https://xingying-z.github.io/tags/GitHub-Pages/"/>
+    <category term="Hexo" scheme="https://xingying-z.github.io/tags/Hexo/"/>
+    <category term="部署" scheme="https://xingying-z.github.io/tags/%E9%83%A8%E7%BD%B2/"/>
+    <content>
+      <![CDATA[<p>静态博客最大的好处是：<strong>没有服务器要维护，也没有数据库要备份</strong>。生成一堆 HTML，扔给 CDN，就完事了。</p><h2 id="三种常见托管方式"><a href="#三种常见托管方式" class="headerlink" title="三种常见托管方式"></a>三种常见托管方式</h2><table><thead><tr><th>方案</th><th>成本</th><th>自定义域名</th><th>构建</th></tr></thead><tbody><tr><td>GitHub Pages</td><td>免费</td><td>支持</td><td>本地构建后推送</td></tr><tr><td>Cloudflare Pages</td><td>免费</td><td>支持</td><td>可自动构建</td></tr><tr><td>Vercel &#x2F; Netlify</td><td>免费额度</td><td>支持</td><td>可自动构建</td></tr></tbody></table><h2 id="仓库命名很关键"><a href="#仓库命名很关键" class="headerlink" title="仓库命名很关键"></a>仓库命名很关键</h2><ul><li>用户站：仓库叫 <code>&lt;用户名&gt;.github.io</code>，访问地址就是 <code>https://&lt;用户名&gt;.github.io</code></li><li>项目站：仓库叫任意名字，访问地址多一层 <code>/&lt;仓库名&gt;/</code></li></ul><p>选错的话，CSS 和图片会因为路径不对而全部 404。项目站需要额外改 <code>root</code>：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://yourname.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/my-blog/</span></span><br></pre></td></tr></table></figure><h2 id="发布流程"><a href="#发布流程" class="headerlink" title="发布流程"></a>发布流程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 本地预览</span></span><br><span class="line">npx hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 生成静态文件</span></span><br><span class="line">npx hexo clean &amp;&amp; npx hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 一键推到 GitHub Pages</span></span><br><span class="line">npx hexo deploy</span><br></pre></td></tr></table></figure><p><code>hexo deploy</code> 会把 <code>public/</code> 推到仓库的 <code>main</code> 分支，然后 GitHub 自动发布，通常一两分钟生效。</p><h2 id="几个容易踩的坑"><a href="#几个容易踩的坑" class="headerlink" title="几个容易踩的坑"></a>几个容易踩的坑</h2><ol><li><strong>国内访问 <code>*.github.io</code> 可能不稳定</strong>，可以考虑 Cloudflare Pages 或自有域名 + CDN。</li><li><strong>首次部署后是 404</strong>，多半是 Pages 的 Source 没选对，或者构建还没跑完。</li><li><strong>图片别用外链图床</strong>，图床挂了文章就花了，放进 <code>source/img/</code> 最稳。</li></ol><blockquote><p>下一篇可以聊聊怎么把写作流程做得更顺：草稿、图片压缩、自动部署。</p></blockquote>]]>
+    </content>
+    <id>https://xingying-z.github.io/2026/10/26/github-pages-blog/</id>
+    <link href="https://xingying-z.github.io/2026/10/26/github-pages-blog/"/>
+    <published>2026-10-26T13:10:00.000Z</published>
+    <summary>从本地写作到线上访问，一条完整的静态博客发布链路。</summary>
+    <title>用 GitHub Pages 免费托管博客</title>
+    <updated>2026-10-26T13:10:00.000Z</updated>
+  </entry>
+</feed>
