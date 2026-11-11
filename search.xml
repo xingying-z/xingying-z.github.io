@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>你好，世界</title>
-    <url>/2026/10/28/hello-world/</url>
-    <content><![CDATA[<p>这是博客的第一篇文章。</p>
-<h2 id="为什么要有自己的博客"><a href="#为什么要有自己的博客" class="headerlink" title="为什么要有自己的博客"></a>为什么要有自己的博客</h2><p>社交平台的推荐算法决定了你看到什么，而博客由你自己决定写什么、怎么排版、放多久。<br>它更像一间自己的房间：家具可以随时挪动，墙上可以钉任何东西。</p>
-<h2 id="接下来写什么"><a href="#接下来写什么" class="headerlink" title="接下来写什么"></a>接下来写什么</h2><ul>
-<li>一些踩坑记录，尤其是那些搜索引擎里找不到答案的</li>
-<li>读书和工具的笔记</li>
-<li>偶尔的非技术内容</li>
-</ul>
-<h2 id="一个代码块示例"><a href="#一个代码块示例" class="headerlink" title="一个代码块示例"></a>一个代码块示例</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">hello</span> = (<span class="params">name</span>) =&gt; <span class="string">`你好，<span class="subst">$&#123;name&#125;</span>`</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">hello</span>(<span class="string">&#x27;世界&#x27;</span>));</span><br></pre></td></tr></table></figure>
-
-<p>写作流程很简单：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npx hexo new <span class="string">&quot;文章标题&quot;</span>     <span class="comment"># 新建文章</span></span><br><span class="line">npx hexo server            <span class="comment"># 本地预览 http://localhost:4000</span></span><br><span class="line">npx hexo deploy            <span class="comment"># 推送到 GitHub Pages</span></span><br></pre></td></tr></table></figure>
-
-<p>欢迎来到我的博客。</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>开始</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>用 GitHub Pages 免费托管博客</title>
     <url>/2026/10/26/github-pages-blog/</url>
     <content><![CDATA[<p>静态博客最大的好处是：<strong>没有服务器要维护，也没有数据库要备份</strong>。生成一堆 HTML，扔给 CDN，就完事了。</p>
@@ -83,6 +58,31 @@
         <tag>GitHub Pages</tag>
         <tag>Hexo</tag>
         <tag>部署</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你好，世界</title>
+    <url>/2026/10/28/hello-world/</url>
+    <content><![CDATA[<p>这是博客的第一篇文章。</p>
+<h2 id="为什么要有自己的博客"><a href="#为什么要有自己的博客" class="headerlink" title="为什么要有自己的博客"></a>为什么要有自己的博客</h2><p>社交平台的推荐算法决定了你看到什么，而博客由你自己决定写什么、怎么排版、放多久。<br>它更像一间自己的房间：家具可以随时挪动，墙上可以钉任何东西。</p>
+<h2 id="接下来写什么"><a href="#接下来写什么" class="headerlink" title="接下来写什么"></a>接下来写什么</h2><ul>
+<li>一些踩坑记录，尤其是那些搜索引擎里找不到答案的</li>
+<li>读书和工具的笔记</li>
+<li>偶尔的非技术内容</li>
+</ul>
+<h2 id="一个代码块示例"><a href="#一个代码块示例" class="headerlink" title="一个代码块示例"></a>一个代码块示例</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">hello</span> = (<span class="params">name</span>) =&gt; <span class="string">`你好，<span class="subst">$&#123;name&#125;</span>`</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">hello</span>(<span class="string">&#x27;世界&#x27;</span>));</span><br></pre></td></tr></table></figure>
+
+<p>写作流程很简单：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npx hexo new <span class="string">&quot;文章标题&quot;</span>     <span class="comment"># 新建文章</span></span><br><span class="line">npx hexo server            <span class="comment"># 本地预览 http://localhost:4000</span></span><br><span class="line">npx hexo deploy            <span class="comment"># 推送到 GitHub Pages</span></span><br></pre></td></tr></table></figure>
+
+<p>欢迎来到我的博客。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>开始</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
 </search>
