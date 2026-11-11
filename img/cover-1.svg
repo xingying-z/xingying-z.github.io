@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="c1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2b1b5e"/>
+      <stop offset="100%" stop-color="#0d0b1c"/>
+    </linearGradient>
+    <filter id="s1"><feGaussianBlur stdDeviation="55"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#c1)"/>
+  <g filter="url(#s1)">
+    <circle cx="640" cy="120" r="150" fill="#7b5cff" opacity="0.55"/>
+    <circle cx="180" cy="400" r="160" fill="#22d3c5" opacity="0.30"/>
+  </g>
+  <g stroke="#ffffff" stroke-opacity="0.14" fill="none">
+    <path d="M80 400 C220 300 320 430 460 330 S680 250 760 300"/>
+    <path d="M80 440 C220 340 320 470 460 370 S680 290 760 340"/>
+  </g>
+  <g fill="#ffffff" font-family="Segoe UI, Arial, sans-serif">
+    <text x="64" y="150" font-size="20" letter-spacing="6" opacity="0.55">HELLO WORLD</text>
+    <text x="64" y="212" font-size="52" font-weight="600" opacity="0.92">开始写点什么</text>
+  </g>
+</svg>
